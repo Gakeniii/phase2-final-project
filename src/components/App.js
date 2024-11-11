@@ -1,17 +1,20 @@
-import React from "react";
-import NavBar from "./NavBar";
-import Home from "./Home";
-import About from "./About";
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './Navbar';
+import Home from './Home';
+import PatientList from './PatientList';
+import PatientDetail from './PatientDetail';
+import AddPatient from './AddPatient';
 
-function App() {
-  return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
-    </div>
-  );
-}
-
+const App = () => (
+  <>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/patients" element={<PatientList />} />
+      <Route path="/patients/:id" element={<PatientDetail />} />
+      <Route path="/add-patient" element={<AddPatient />} />
+    </Routes>
+  </>
+);
 
 export default App;
