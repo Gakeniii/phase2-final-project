@@ -14,6 +14,7 @@ const PatientDetail = () => {
   if (!patient) return <p>Loading...</p>;
 
   return (
+    
     <div>
       <main>
           <h1>Patients Information</h1>
