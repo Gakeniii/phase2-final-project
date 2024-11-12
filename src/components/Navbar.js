@@ -6,8 +6,8 @@ import { useRef } from 'react';
 function Navbar(){
   const navRef = useRef();
 
-  function showNavBar(){
-    navRef.current.classList.toggle("responsive_nav")
+  const showNavBar = () => {
+    navRef.current.classList.toggle("responsive_nav");
   }
 
   return  (
@@ -15,9 +15,9 @@ function Navbar(){
       <h1>Schedualy</h1>
       <nav ref={navRef}>
         <Link to="/"> Home </Link>
-        <Link to="/about">About Us</Link>
         <Link to="/patients"> Patients</Link>
         <Link to="/add-patient">Add Patient</Link>
+        <Link to="/about">About Us</Link>
         
         <button className='nav-btn nav-close-btn' onClick={showNavBar}>
           <FaTimes />

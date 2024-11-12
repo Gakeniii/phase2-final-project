@@ -1,8 +1,19 @@
+import React from 'react';
+import Profile from '../images/happy-group.jpg';
+
 const Home = () => (
   <div id="home">
-    <h1>Welcome to the Patients Registry App</h1>
-    <p>Keep track of all your patient appointments in one place.</p>
-    
+    <div className="content">
+      <div className="text">
+        <h1>Hello Dr.Nevine</h1>
+        <p>We hope that this App is of continous great service to you.</p>
+        <p>Keeping track of all your and patients and patient appointments .</p>
+        <em>Our patients well-being is our top priority!</em>
+      </div>
+      <div className="image">
+        <img src={Profile} alt="Patient registry" ></img>
+      </div>
+    </div>
   </div>
 );
 

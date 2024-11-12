@@ -1,10 +1,11 @@
-import { Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './Home';
 import AboutUs from './AboutUs'
 import PatientList from './PatientList';
 import PatientDetail from './PatientDetail';
 import AddPatient from './AddPatient';
+import Footer from './Footer'
 
 const App = () => (
   <div>
@@ -16,7 +17,8 @@ const App = () => (
       <Route path="/patients/:id" element={<PatientDetail />} />
       <Route path="/add-patient" element={<AddPatient />} />
     </Routes>
-    <footer> Schedually </footer>
+    <Footer />
+
   </div>
 );
 

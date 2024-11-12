@@ -6,12 +6,49 @@
     box-sizing: border-box;
     font-family: "Nunito", serif;
 }
+body {
+    background-color: #e1eefa;
+}
 
 :root{
     --mainColor: #023e8a;
-    /* --LOL: #e9edc9; */
     --secondaryColor: #90e0ef;
+    --text: #12498b;
     --textColor: white;
+}
+
+/* NAV BAR AND HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+nav a{
+    margin: 0 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--secondaryColor);
+    text-decoration: underline;
+}
+
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.5rem;
 }
 /* MEDIA QUERIES ONLY */
 @media only screen and (max-width: 1024px) {
@@ -19,10 +56,6 @@
         color: var(--textColor);
         visibility: visible;
         opacity: 1;
-    }
-
-    h1{
-        font-size: 20px;
     }
 
     header nav {
@@ -55,124 +88,307 @@
         font-size: 1.5rem;
     }
 }
-/* NAV BAR AND HEADER */
-header{
+
+/* HOME */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0 2rem;
-    background-color: var(--mainColor);
-    color: var(--textColor);
+    color: var(--text);
 }
 
-nav a{
-    margin: 0 2rem;
-    color: white;
-    text-decoration: none;
-}
-nav a:hover{
-    color: var(--secondaryColor);
+.text {
+    flex: 1;
+    padding-right: 20px;
 }
 
-header .nav-btn{
-    padding: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    font-size: 1.5rem;
+.text h1{
+    color: #032f69;
+}
+
+p{
+    font-size: 18px;    
+}
+
+em{
+    color: #04174a;
+}
+
+.image {
+    flex: 1.5;
+}
+
+.image img {
+    border-radius: 5px;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
 }
 
 /* ADD PATIENT FORM */
-div.form{
-    margin: auto;
-    width: 500px;
-    background-color: #64a4c4;
-    width: 12cm;
-    padding:10px 20px;
-    border-radius: 10px;
-}
-
-label{
-    width: 180px;
-    display: inline-block;
-    margin: 0.2cm;
-    font-size: 16px;
-    font-weight: bold;
-}
-input{
-    padding: 4px;
-    margin: 5px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 1px solid black;
-    width: 7cm;
-}
-
-button#submit{
-    border: none;
-    font-size: 18px;
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
     border-radius: 8px;
-    margin-top: 7px;
-    color: white;
-    font-weight: bold;
-    padding: 4px;
-    background-color: #0077b6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-background#submit:hover{
-    background-color: violet;
-    color: aliceblue;
-}
-
-h2#form-h2{
+.form-header {
+    font-size: 2rem;
+    color: var(--text);
     text-align: center;
-    text-decoration: underline;
-    color: #29335c;font-size: 24px;
-
+    margin-bottom: 30px;
 }
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #d3e0f0;
+    border-radius: 4px;
+    background-color: #f9fbfd;
+}
+
+.input-field:focus {
+    border-color: #1d4e89;
+    outline: none;
+}
+
+.textarea-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #d3e0f0;
+    border-radius: 4px;
+    background-color: #f9fbfd;
+    resize: vertical;
+}
+
+.textarea-field:focus {
+    border-color: #1d4e89;
+    outline: none;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+center {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #1e3a5f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* PATIENT DETAILS */
+.patient-detail-container {
+    background-color: #f0f4f8;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.patient-detail-main {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.patient-detail-heading {
+    color: #0845a1;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.patient-name {
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.appointment-info {
+    color: #777;
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.appointment-info strong {
+    color: #333;
+}
+
 
 /* PATIENTS LIST  */
 h2#info{
-    margin-left: 30px;
+    font-size: 40px;
     text-align: center;
-
-}
-ul{
-    border-radius: 10px;
-    margin: 1em;
-    padding: 1rem;
-    width: 500px;
-    color: var(--textColor);
-    width: 140px;
-    background: #0096c7;
-    width: 20%;
-    height: 100vh;
-}
-li{
-    padding: 1.2rem;
-    list-style-type: style circle;;
-    row-gap: 30px;
-}
-li:hover{
-    background-color: #00b4db;
-    border: none;
-    border-radius: 8px;
 }
 a{
-    font-size: 20px;
+    font-size: 17px;
     text-decoration: none;
-    color: #041e04;
+    color: rgb(14, 14, 14);
 }
 
+/* cards */
+.patient-info {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.info-header {
+    font-size: 2rem;
+    color: #1d4e89;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-/* background-color: #e9edc9; */
-/* background-color: rgba(85, 60, 44, 0.925); */
-/* color: #909174; */
-/* color: #f6ffeb; */
-/* background-color: #515a47; */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.patient-card {
+    background-color: #ffffff;
+    border: 1px solid #d3e0f0;
+    border-radius: 8px;
+    width: 250px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.patient-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #1e3a5f;
+}
+
+.card-body {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #2a4e76;
+}
+
+.view-details-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+}
+
+.view-details-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.search-box {
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.search-box input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #a3c4d7;
+    border-style: none none solid solid;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-box input:focus {
+    border-color: #1d4e89;
+    outline: none;
+}
+
+/* FOOTER STYLING */
+.footer {
+    background-color: var(--mainColor);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #f1f8ff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .footer-link {
+        margin: 5px 0;
+    }
+}
