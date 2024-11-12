@@ -1,64 +1,178 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", serif;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+:root{
+    --mainColor: #023e8a;
+    /* --LOL: #e9edc9; */
+    --secondaryColor: #90e0ef;
+    --textColor: white;
+}
+/* MEDIA QUERIES ONLY */
+@media only screen and (max-width: 1024px) {
+    header .nav-btn {
+        color: var(--textColor);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 0.5ms;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav {
+        transform: none;
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+}
+/* NAV BAR AND HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", serif;
-  margin-bottom: 1em;
+nav a{
+    margin: 0 2rem;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--secondaryColor);
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.5rem;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: firebrick;
-  border-bottom: 2px solid firebrick;
-  transition: 0.1s;
+/* ADD PATIENT FORM */
+div.form{
+    margin: auto;
+    width: 500px;
+    background-color: #64a4c4;
+    width: 12cm;
+    padding:10px 20px;
+    border-radius: 10px;
 }
 
-nav a:hover,
-nav a:active {
-  color: tomato;
-  border-bottom: 2px solid tomato;
+label{
+    width: 180px;
+    display: inline-block;
+    margin: 0.2cm;
+    font-size: 16px;
+    font-weight: bold;
+}
+input{
+    padding: 4px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 7cm;
 }
 
-#home,
-#about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  height: 50vh;
-  min-height: 400px;
-  padding: 1rem;
+button#submit{
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 7px;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    background-color: #0077b6;
 }
 
-#home {
-  background-color: cornsilk;
+background#submit:hover{
+    background-color: violet;
+    color: aliceblue;
 }
 
-#about img {
-  max-height: 50%;
+h2#form-h2{
+    text-align: center;
+    text-decoration: underline;
+    color: #29335c;font-size: 24px;
+
 }
+
+/* PATIENTS LIST  */
+h2#info{
+    margin-left: 30px;
+    text-align: center;
+
+}
+ul{
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1rem;
+    width: 500px;
+    color: var(--textColor);
+    width: 140px;
+    background: #0096c7;
+    width: 20%;
+    height: 100vh;
+}
+li{
+    padding: 1.2rem;
+    list-style-type: style circle;;
+    row-gap: 30px;
+}
+li:hover{
+    background-color: #00b4db;
+    border: none;
+    border-radius: 8px;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #041e04;
+}
+
+
+
+/* background-color: #e9edc9; */
+/* background-color: rgba(85, 60, 44, 0.925); */
+/* color: #909174; */
+/* color: #f6ffeb; */
+/* background-color: #515a47; */

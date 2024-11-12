@@ -11,8 +11,8 @@ const PatientList = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Patients</h2>
+    <div id='patient-info'>
+      <h2 id='info'>Patients .</h2>
       <ul>
         {patients.map(patient => (
           <li key={patient.id}>

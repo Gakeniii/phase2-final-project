@@ -15,9 +15,12 @@ const PatientDetail = () => {
 
   return (
     <div>
-      <h2>{patient.name}</h2>
-      <p>Previous Appointment: {patient.previousAppointment}</p>
-      <p>Next Appointment: {patient.nextAppointment}</p>
+      <main>
+          <h1>Patients Information</h1>
+          <h2>{patient.name}</h2>
+          <p>Previous Appointment: {patient.previousAppointment}</p>
+          <p>Next Appointment: {patient.nextAppointment}</p>
+      </main>
     </div>
   );
 };
