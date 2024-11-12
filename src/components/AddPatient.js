@@ -8,6 +8,7 @@ const AddPatient = () => {
   const [nextAppointment, setNextAppointment] = useState('');
   const [diagnosis, setDiagnosis] = useState('');
   const [notes, setNotes] = useState('');
+  const [observations, setObservations] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -70,6 +71,15 @@ const AddPatient = () => {
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             placeholder="Write notes here..." 
+            className="textarea-field" 
+          ></textarea>
+
+          <label>Observations:</label>
+          <textarea 
+            rows="5" 
+            value={observations}
+            onChange={(e) => setObservations(e.target.value)}
+            placeholder="Observations..." 
             className="textarea-field" 
           ></textarea>
           

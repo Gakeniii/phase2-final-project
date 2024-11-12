@@ -24,7 +24,7 @@ const PatientList = () => {
               </div>
               <div className="card-body">
                 {/* specify if urgent or not */}
-                {/* <p>Details about {patient.name}</p> */}
+                <p>{patient.diagnosis}</p>
                 <Link to={`/patients/${patient.id}`} className="view-details-link">View Details</Link>
               </div>
             </div>

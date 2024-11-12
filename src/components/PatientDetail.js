@@ -21,8 +21,9 @@ const PatientDetail = () => {
           <h2 className="patient-name">{patient.name}</h2>
           <p className="appointment-info"><strong>Previous Appointment:</strong> {patient.previousAppointment}</p>
           <p className="appointment-info"><strong>Next Appointment:</strong> {patient.nextAppointment}</p>
-          {/* <p className="diagnosis-info"><strong>DIAGNOSIS:</strong> {patient.diagnosis}</p>
-          <p className="patients-notes"><h4>Notes:</h4> {patient.notes}</p> */}
+          <p className="diagnosis-info"><strong>DIAGNOSIS:</strong> {patient.diagnosis}</p>
+          <p className="patients-notes"><h3>Notes:</h3> {patient.notes}</p>
+          <p className="observation-notes"><h3>Observations</h3> {patient.observations}</p>
       </main>
     </div>
   );

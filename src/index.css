@@ -252,7 +252,19 @@ form {
 .appointment-info strong {
     color: #333;
 }
-
+.diagnosis-info{
+    color: #333
+}
+.patients-notes{
+    color: #333;
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+.observation-notes{
+    color: #333;
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
 
 /* PATIENTS LIST  */
 h2#info{
