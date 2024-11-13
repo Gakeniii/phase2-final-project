@@ -12,11 +12,11 @@ function Search({handleSearch}) {
   return (
     <div className="search-box">    
       <IoSearchOutline className="search-icon"/>
-        <input
+      <input
           type="text"
           id="search"
           value={searchPat}
-          placeholder="Search patient..."
+          placeholder="     Search patient..."
           onChange={handleSearch}
       />
     </div>

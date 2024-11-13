@@ -388,6 +388,15 @@ p#diagnosis{
     max-width: 300px;
 }
 
+.search-icon{
+    position: relative;
+    top: 4px;
+    left: 25px;
+    font-size: 20px;
+    color: #777;
+    pointer-events: none;
+}
+
 .search-box input:focus {
     border-color: #1d4e89;
     outline: none;
