@@ -10,19 +10,19 @@ import Footer from './Footer'
 
 function App() {
   return (
-      <div>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<AboutUs/>} />
-      <Route path="/patients" element={<PatientCard />} />
-      <Route path="/patients/:id" element={<PatientDetail />} />
-      <Route path="/patients/:id/edit" element={<UpdatePatient />} />
-      <Route path="/add-patient" element={<AddPatient />} />
-    </Routes> <br></br>
-    <Footer />
-  </div>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<AboutUs/>} />
+        <Route path="/patients" element={<PatientCard />} />
+        <Route path="/patients/:id" element={<PatientDetail />} />
+        <Route path="/patients/:id/edit" element={<UpdatePatient />} />
+        <Route path="/add-patient" element={<AddPatient />} />
+      </Routes> <br></br>
+      <Footer />
+    </div>
   )
 };
 

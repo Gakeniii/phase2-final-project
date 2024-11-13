@@ -294,16 +294,13 @@ form {
     margin: 8px 0;
 }
 
-/* PATIENTS LIST  */
+/* PATIENT CARDS  */
 h2#info{
     font-size: 40px;
     text-align: center;
-}
-a{
-    font-size: 17px;
-    text-decoration: none;
-    color: rgb(14, 14, 14);
-}
+    color: #0845a1;
+} 
+
 
 /* cards */
 .patient-info {
@@ -312,12 +309,12 @@ a{
     margin: 0 auto;
 }
 
-.info-header {
+/* .info-header {
     font-size: 2rem;
-    color: #1d4e89;
+    color: #9f949b;
     text-align: center;
     margin-bottom: 30px;
-}
+} */
 
 .card-container {
     display: flex;
@@ -344,17 +341,17 @@ a{
 .card-header h3 {
     margin: 0;
     font-size: 1.25rem;
-    color: #1e3a5f;
+    color:#032f69;
 }
 
 p#diagnosis{
-    color: #620569;
+    color: #db1690;
     font-size: 15px;
 }
 
 .card-body {
     margin-top: 10px;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     color: #2a4e76;
 }
 
@@ -380,39 +377,33 @@ p#diagnosis{
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #a3c4d7;
-    border-style: none none solid solid;
-    border-radius: 4px;
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
 }
 
-.search-icon{
-    position: absolute;
-    top: 163px;
-    font-size: 20px;
-    color: #777;
-}
 
 .search-box input:focus {
-    border-color: #1d4e89;
+    border-color: #a3c4d7;
     outline: none;
 }
 
 /* ABOUT US PAGE STYLING */
 .about-container {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 40px;
+    padding: 20px;
     background-color: #f7f9fc;
-    height: 100vh;
-    overflow-y: auto;
+    /* height: 100vh;
+    overflow-y: auto; */
 }
 
 .about-content {
     margin-top: auto;
-  max-width: 600px;
-  animation: fadeIn 1.5s ease-in-out;
+    width: 60%;
+    /* max-width: 600px; */
+    padding-right: 20px;
+    /* animation: fadeIn 1.5s ease-in-out; */
 }
 
 .about-title {
@@ -426,15 +417,16 @@ p#diagnosis{
   font-size: 1.1rem;
   color: #4a4a4a;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 
 .slideshow-container{
+    width: 35%;
     position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+    overflow: hidden;
+    /* max-width: 600px; */
+    /* margin: auto; */
 }
 
 .slide {
@@ -443,9 +435,10 @@ p#diagnosis{
 
 img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
+  object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  height: auto;
+  /* height: auto; */
 }
 
 @keyframes fadeInOut {
@@ -464,7 +457,7 @@ img {
 }
 
 .fade {
-    animation: fadeInOut 8s infinite;
+    animation: fadeInOut 12s infinite;
 }
 
 .fade:nth-child(1) {
@@ -472,15 +465,15 @@ img {
 }
 
 .fade:nth-child(2) {
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 
 .fade:nth-child(3) {
-  animation-delay: 6s;
+  animation-delay: 8s;
 }
 
 /* Fade-in animation for text */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -489,10 +482,10 @@ img {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
-/* Fade-in animation for image
-@keyframes fadeInRight {
+/* Fade-in animation for image */
+/* @keyframes fadeInRight {
   from {
     opacity: 0;
     transform: translateX(20px);
@@ -582,7 +575,7 @@ input[type="date"] {
     color: white;
     padding: 20px;
     text-align: center;
-    position: relative;
+    position: sticky;
     bottom: 0;
     height: 80px;
     width: 100%;
