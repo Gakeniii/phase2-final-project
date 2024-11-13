@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const AddPatient = () => {
   const [name, setName] = useState('');
+  const [age, setAge] = useState('');
   const [previousAppointment, setPreviousAppointment] = useState('');
   const [nextAppointment, setNextAppointment] = useState('');
   const [diagnosis, setDiagnosis] = useState('');
@@ -13,7 +14,7 @@ const AddPatient = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newPatient = { name, previousAppointment, nextAppointment, diagnosis, notes, observations };
+    const newPatient = { name, age, previousAppointment, nextAppointment, diagnosis, notes, observations };
     
     fetch('https://json-server-template-5kcv.onrender.com/patients', {
       method: 'POST',
@@ -35,6 +36,16 @@ const AddPatient = () => {
             onChange={(e) => setName(e.target.value)} 
             required 
             className="input-field" 
+          />
+
+          <label>Age:</label>
+            <input 
+              type="text" 
+              placeholder="Age" 
+              value={age} 
+              onChange={(e) => setAge(e.target.value)} 
+              required 
+              className="input-field" 
           />
           
           <label>Previous Appointment:</label>

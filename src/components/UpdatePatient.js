@@ -6,6 +6,7 @@ const UpdatePatient = () => {
   const navigate = useNavigate();
   const [patient, setPatient] = useState({
     name: '',
+    age: '',
     diagnosis: '',
     nextAppointment: '',
     notes: '',
@@ -52,7 +53,7 @@ const UpdatePatient = () => {
     <div className="update-patient-container">
       <h2>Update Patient Information</h2>
       <form onSubmit={handleSubmit} className="update-patient-form">
-        <div className="form-group">
+        
           <label>Name:</label>
           <input
             type="text"
@@ -60,9 +61,9 @@ const UpdatePatient = () => {
             value={patient.name}
             onChange={handleChange}
             required
+            className="form-group"
           />
-        </div>
-        <div className="form-group">
+        
           <label>Diagnosis:</label>
           <input
             type="text"
@@ -70,9 +71,19 @@ const UpdatePatient = () => {
             value={patient.diagnosis}
             onChange={handleChange}
             required
+            className="form-group"
           />
-        </div>
-        <div className="form-group">
+
+          <label>Age:</label>
+          <input
+            type="text"
+            name="age"
+            value={patient.age}
+            onChange={handleChange}
+            required
+            className="form-group"
+          />
+
           <label>Next Appointment Date:</label>
           <input
             type="date"
@@ -80,8 +91,9 @@ const UpdatePatient = () => {
             value={patient.nextAppointment}
             onChange={handleChange}
             required
+            className="form-group"
           />
-        </div>
+
           <label>Notes:</label>
           <textarea 
             rows="5" 

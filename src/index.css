@@ -16,7 +16,7 @@ body {
     --text: #12498b;
     --textColor: white;
 }
-/* PROFILE at navbar */
+/*------------------------------------------------------PROFILE at navbar---------------------------------------*/
 .p-name{
     background: transparent;
     font-size: 0.95em;
@@ -41,7 +41,7 @@ body {
     height: 50px;
 }
 
-/* NAV BAR AND HEADER */
+/*-----------------------------------------------------NAV BAR AND HEADER----------------------------------------*/
 header{
     display: flex;
     align-items: center;
@@ -117,7 +117,7 @@ header .nav-btn{
     }
 }
 
-/* HOME */
+/*-------------------------------------------------------HOME  PAGE----------------------------------------------------*/
 #home {
     display: flex;
     justify-content: center;
@@ -160,7 +160,7 @@ em{
     height: 80vh;
 }
 
-/* ADD PATIENT FORM */
+/*-----------------------------------------------------ADD PATIENT FORM-----------------------------------------*/
 .form-container {
     width: 100%;
     max-width: 800px;
@@ -243,7 +243,7 @@ form {
     gap: 15px;
 }
 
-/* PATIENT DETAILS */
+/*---------------------------------------------------PATIENT DETAILS------------------------------------------*/
 .patient-detail-container {
     background-color: #f0f4f8;
     padding: 20px;
@@ -320,7 +320,7 @@ form {
     margin: 8px 0;
 }
 
-/* PATIENT CARDS  */
+/* --------------------------------------------PATIENT CARDS--------------------------------------------------- */
 h2#info{
     font-size: 40px;
     text-align: center;
@@ -328,7 +328,7 @@ h2#info{
 } 
 
 
-/* cards */
+/* -------------------cards----------- */
 .patient-info {
     padding: 20px;
     max-width: 1200px;
@@ -406,88 +406,21 @@ p#diagnosis{
     outline: none;
 }
 
-/* ABOUT US PAGE STYLING */
+/* ---------------------------------------------ABOUT US PAGE STYLING------------------------------------------*/
+
 .about-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f7f9fc;
-
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 40px;
+  background-color: #f9f9f9;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
 }
 
-.about-content {
-    margin-top: auto;
-    width: 60%;
-    padding-right: 20px;
-}
-
-.about-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color:#032f69;
-  margin-bottom: 20px;
-}
-
-.about-description {
-  font-size: 1.1rem;
-  color: #4a4a4a;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-
-.slideshow-container{
-    width: 35%;
-    position: relative;
-    overflow: hidden;
-}
-
-.slide {
-  display: none;
-}
-
-img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  /* height: auto; */
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 1;
-  }
-  66% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.fade {
-    animation: fadeInOut 12s infinite;
-}
-
-.fade:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.fade:nth-child(2) {
-  animation-delay: 4s;
-}
-
-.fade:nth-child(3) {
-  animation-delay: 8s;
-}
-
-/* Fade-in animation for text */
-/* @keyframes fadeIn {
+/* Fade-in and slide-up animation */
+@keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -496,21 +429,78 @@ img {
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
 
-/* Fade-in animation for image */
-/* @keyframes fadeInRight {
+/* ---------------------------------------CONTENT STYLING ----------------------------------------------------- */
+.about-content {
+  flex: 1;
+  color: #333;
+  animation: contentFadeIn 1.2s ease forwards;
+}
+
+.about-title {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 15px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #666;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.slideshow-container {
+  flex: 1;
+  position: relative;
+  max-width: 400px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale(0.95);
+  animation: imageFadeIn 1.5s ease forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateX(20px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
   }
-} */
+}
 
-/* UPDATE PATIENT PAGE */
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/*-----------------------------------------------UPDATE PATIENT PAGE-------------------------------------------- */
 .update-patient-container {
   margin-top: 20px;
   width: 70%;
@@ -586,7 +576,7 @@ input[type="date"] {
 }
 
 
-/* FOOTER STYLING */
+/* ---------------------------------------------FOOTER STYLING-------------------------------------------------*/
 .app-container{
     display: flex;
     flex-direction: column;

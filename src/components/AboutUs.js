@@ -28,12 +28,6 @@ const AboutUs = () => {
         <div className="slide fade">
           <img src={Girl} alt="Image 1" />
         </div>
-        <div className="slide fade">
-          <img src={Doctors} alt="Image 2" />
-        </div>
-        <div className="slide fade">
-          <img src={Session} alt="Image 3" />
-        </div>
       </div>
     </div>
   );
