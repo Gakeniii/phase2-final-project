@@ -10,7 +10,7 @@ import Footer from './Footer'
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
