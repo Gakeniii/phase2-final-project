@@ -13,7 +13,7 @@ const AddPatient = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newPatient = { name, previousAppointment, nextAppointment, diagnosis, notes };
+    const newPatient = { name, previousAppointment, nextAppointment, diagnosis, notes, observations };
     
     fetch('https://json-server-template-5kcv.onrender.com/patients', {
       method: 'POST',

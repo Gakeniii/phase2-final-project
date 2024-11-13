@@ -1,4 +1,5 @@
-import {  Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { Route, Routes, Navigate} from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './Home';
 import AboutUs from './AboutUs'
@@ -9,12 +10,13 @@ import AddPatient from './AddPatient';
 import Footer from './Footer'
 
 function App() {
+
   return (
     <div className="app-container">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/patients" element={<PatientCard />} />
         <Route path="/patients/:id" element={<PatientDetail />} />

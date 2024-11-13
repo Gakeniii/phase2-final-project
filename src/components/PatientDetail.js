@@ -1,6 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import UpdatePatient from './UpdatePatient';
 
 
 const PatientDetail = () => {

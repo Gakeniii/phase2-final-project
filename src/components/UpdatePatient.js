@@ -31,7 +31,7 @@ const UpdatePatient = () => {
     e.preventDefault();
 
     fetch(`https://json-server-template-5kcv.onrender.com/patients/${id}`, {
-      method: 'PUT',
+      method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
       },
