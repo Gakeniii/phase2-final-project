@@ -32,7 +32,8 @@ const PatientCard = () => {
                   <h3>{patient.name}</h3>
                 </div>
                 <div className="card-body">
-                  <p>{patient.diagnosis}</p>
+                  <p>{patient.diagnosis}</p><br/>
+                  <p id="diagnosis">Next appt:{patient.nextAppointment}</p>
                   <Link to={`/patients/${patient.id}`} className="view-details-link">
                     View Details
                   </Link>

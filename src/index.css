@@ -5,6 +5,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Nunito", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 body {
     background-color: #f7f9fc;
@@ -28,6 +30,9 @@ header{
     color: var(--textColor);
 }
 
+#nav-header{
+    font-family: "Nunito", serif;
+}
 nav a{
     margin: 0 2rem;
     color: white;
@@ -342,6 +347,11 @@ a{
     margin: 0;
     font-size: 1.25rem;
     color: #1e3a5f;
+}
+
+p#diagnosis{
+    color: #620569;
+    font-size: 15px;
 }
 
 .card-body {

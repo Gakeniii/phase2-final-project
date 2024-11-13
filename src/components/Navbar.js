@@ -12,7 +12,7 @@ function Navbar(){
 
   return  (
     <header id="navbar">
-      <h1>Schedualy</h1>
+      <h1 id="nav-header">Schedualy</h1>
       <nav ref={navRef}>
         <Link to="/home"> Home </Link>
         <Link to="/patients"> Patients</Link>

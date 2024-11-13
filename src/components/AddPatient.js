@@ -24,7 +24,7 @@ const AddPatient = () => {
 
   return (
     <>
-      <h2 id='form-h2' className="form-header">Add New Patient</h2>
+      <h2 id='form-h2'className="form-header">Add New Patient</h2>
       <div className="form-container">
         <form onSubmit={handleSubmit} className="patient-form">
           <label>Patients Name:</label>
