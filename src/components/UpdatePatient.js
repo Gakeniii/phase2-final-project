@@ -8,6 +8,8 @@ const UpdatePatient = () => {
     name: '',
     diagnosis: '',
     nextAppointment: '',
+    notes: '',
+    observations: ''
   });
 
   useEffect(() => {
@@ -18,7 +20,7 @@ const UpdatePatient = () => {
   }, [id]);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, notes, observations } = e.target;
     setPatient(prevState => ({
       ...prevState,
       [name]: value,
@@ -29,7 +31,7 @@ const UpdatePatient = () => {
     e.preventDefault();
 
     fetch(`https://json-server-template-5kcv.onrender.com/patients/${id}`, {
-      method: 'PATCH',
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -80,6 +82,23 @@ const UpdatePatient = () => {
             required
           />
         </div>
+          <label>Notes:</label>
+          <textarea 
+            rows="5" 
+            value={patient.notes}
+            onChange={handleChange}
+            placeholder="Write notes here..." 
+            className="textarea-field" 
+          ></textarea>
+
+          <label>Observations:</label>
+          <textarea 
+            rows="5" 
+            value={patient.observations}
+            onChange={handleChange}
+            placeholder="Observations..." 
+            className="textarea-field" 
+          ></textarea>
         <button type="submit" className="update-button">Save Changes</button>
       </form>
     </div>
