@@ -20,7 +20,7 @@ const UpdatePatient = () => {
   }, [id]);
 
   const handleChange = (e) => {
-    const { name, value, notes, observations } = e.target;
+    const { name, value } = e.target;
     setPatient(prevState => ({
       ...prevState,
       [name]: value,
@@ -40,7 +40,7 @@ const UpdatePatient = () => {
       .then(response => {
         if (response.ok) {
           alert('Patient information updated successfully!');
-          navigate(`/patients/${id}`); // Redirect back to PatientDetail page
+          navigate(`/patients/${id}`);
         } else {
           throw new Error('Failed to update patient information.');
         }
