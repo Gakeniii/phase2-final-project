@@ -1,12 +1,31 @@
-import React from 'react'
+import React from 'react';
 
-function AboutUs() {
+const AboutUs = () => {
   return (
-    <div>
-        <h1>About Us</h1>
-        <p>Schedually was founded on the <em>11th of November 2024</em></p>
+    <div className="about-container">
+      <div className="about-content">
+        <h1 className="about-title">About the Schedualy</h1>
+        <p className="about-description">
+          Funded on the 11th of November, say goodbye to disorganized spreadsheets, lost paperwork, and the inefficiencies that often come with traditional client management methods. This app empowers you to focus on what matters most: providing quality care and guidance to your clients. By streamlining the organization of patient information, the app allows you to maintain a structured, reliable system that can be accessed anytime, anywhere.
+        </p>
+        <p className="about-description">
+          We understand that managing a practice on your own can be challenging. That's why Schedualy offers features designed to reduce administrative burdens. Whether you're keeping track of multiple clients or managing frequent appointments, this app is built to make your life easier. You can quickly access past sessions, add new appointment details, and update client information, all from a user-friendly interface. It’s like having a personal assistant that handles your client scheduling for you.
+        </p>
+        <p className="about-description">
+          Our app also emphasizes security and privacy. We know that your clients’ information is sensitive, and safeguarding it is a top priority. Schedualy incorporates industry-standard security protocols to ensure that all data remains confidential and accessible only to authorized users. Rest assured that your clients' data is protected, allowing you to maintain the highest standards of professionalism and trust in your practice.
+        </p>
+        <p className="about-description">
+          Whether you’re just starting out as a solo practitioner or you’ve been in the field for years, Schedualy adapts to your needs. Our goal is to support your growth and make client management as seamless as possible. We are committed to continuous improvement, and we’re constantly updating the app based on feedback from users like you to ensure that it remains the most effective tool for client management.
+        </p>
+        <p className="about-description">
+          Thank you for choosing Schedualy. We’re excited to be a part of your journey, and we look forward to helping you streamline your practice and enhance your clients' experiences. With Schedualy, managing appointments and client data has never been easier. Welcome to a new way of managing your practice with efficiency and care.
+        </p>
+      </div>
+      <div className="about-image-container">
+        <img src="https://via.placeholder.com/300x300" alt="Professional healthcare setting" className="about-image" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;
