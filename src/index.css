@@ -435,50 +435,48 @@ p#diagnosis{
     width: 100%;
     max-width: 600px;
     margin: auto;
-    overflow: hidden;
 }
 
-/* .slide {
+.slide {
   display: none;
-} */
+}
 
 img {
   width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   height: auto;
-}
-
-.fade {
-  animation: fadeInOut 12s infinite; /* Animation to fade images */
 }
 
 @keyframes fadeInOut {
   0% {
     opacity: 0;
   }
-  10% {
+  33% {
     opacity: 1;
   }
-  30% {
+  66% {
     opacity: 1;
-  }
-  40% {
-    opacity: 0;
   }
   100% {
     opacity: 0;
   }
 }
 
-.slide:nth-child(1) {
+.fade {
+    animation: fadeInOut 8s infinite;
+}
+
+.fade:nth-child(1) {
   animation-delay: 0s;
 }
 
-.slide:nth-child(2) {
-  animation-delay: 4s;
+.fade:nth-child(2) {
+  animation-delay: 3s;
 }
 
-.slide:nth-child(3) {
-  animation-delay: 8s;
+.fade:nth-child(3) {
+  animation-delay: 6s;
 }
 
 /* Fade-in animation for text */
@@ -493,7 +491,7 @@ img {
   }
 }
 
-/* Fade-in animation for image */
+/* Fade-in animation for image
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -503,7 +501,7 @@ img {
     opacity: 1;
     transform: translateX(0);
   }
-}
+} */
 
 /* UPDATE PATIENT PAGE */
 .update-patient-container {

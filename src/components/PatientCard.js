@@ -41,7 +41,7 @@ const PatientCard = () => {
               </div>
             ))
           ) : (
-            <p>No patients found</p>
+            <p>LOADING ...</p>
           )}
         </div>
       </div>
