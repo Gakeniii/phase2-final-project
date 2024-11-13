@@ -1,10 +1,12 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import UpdatePatient from './UpdatePatient';
 
 
 const PatientDetail = () => {
   const { id } = useParams();
   const [patient, setPatient] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`https://json-server-template-5kcv.onrender.com/patients/${id}`)
@@ -24,7 +26,15 @@ const PatientDetail = () => {
           <p className="patients-notes"><h3>Notes:</h3> {patient.notes}</p>
           <p className="observation-notes"><h3>Observations:</h3> {patient.observations}</p>
           <p className="appointment-info-nxt"><strong>Next Appointment:</strong> {patient.nextAppointment}</p>
+
+          <button 
+            className="edit-button"
+            onClick={() => navigate(`/patients/${id}/edit`)}
+          >
+            Edit Info
+          </button>
       </main>
+      
       <br/><br/><br/>
     </div>
   );

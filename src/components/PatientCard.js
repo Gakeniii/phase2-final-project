@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Search from './Search';
 
-const PatientList = () => {
+const PatientCard = () => {
   const [patients, setPatients] = useState([]);
   const [search, setSearch] = useState('');
 
@@ -49,4 +49,4 @@ const PatientList = () => {
   );
 };
 
-export default PatientList;
+export default PatientCard;
