@@ -14,7 +14,7 @@ function Navbar(){
     <header id="navbar">
       <h1>Schedualy</h1>
       <nav ref={navRef}>
-        <Link to="/"> Home </Link>
+        <Link to="/home"> Home </Link>
         <Link to="/patients"> Patients</Link>
         <Link to="/add-patient">Add Patient</Link>
         <Link to="/about">About Us</Link>
