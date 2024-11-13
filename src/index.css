@@ -5,8 +5,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Nunito", serif;
-    font-weight: 600;
-    font-style: normal;
 }
 body {
     background-color: #f7f9fc;
@@ -134,7 +132,7 @@ em{
     border-radius: 5px;
     width: 90%;
     max-width: 900px;
-    height: auto;
+    height: 80vh;
 }
 
 /* ADD PATIENT FORM */
@@ -389,12 +387,10 @@ p#diagnosis{
 }
 
 .search-icon{
-    position: relative;
-    top: 4px;
-    left: 25px;
+    position: absolute;
+    top: 163px;
     font-size: 20px;
     color: #777;
-    pointer-events: none;
 }
 
 .search-box input:focus {
@@ -433,15 +429,56 @@ p#diagnosis{
   margin-bottom: 20px;
 }
 
-.about-image-container {
-  max-width: 400px;
-  animation: fadeInRight 1.5s ease-in-out;
+
+.slideshow-container{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
 }
 
-.about-image {
+/* .slide {
+  display: none;
+} */
+
+img {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  height: auto;
+}
+
+.fade {
+  animation: fadeInOut 12s infinite; /* Animation to fade images */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 8s;
 }
 
 /* Fade-in animation for text */

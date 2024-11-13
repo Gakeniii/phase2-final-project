@@ -1,4 +1,7 @@
 import React from 'react';
+import Girl from '../images/girl-happy.jpg'
+import Doctors from '../images/doctors.jpg'
+import Session from '../images/session.jpg'
 
 const AboutUs = () => {
   return (
@@ -21,8 +24,16 @@ const AboutUs = () => {
           Thank you for choosing Schedualy. We’re excited to be a part of your journey, and we look forward to helping you streamline your practice and enhance your clients' experiences. With Schedualy, managing appointments and client data has never been easier. Welcome to a new way of managing your practice with efficiency and care.
         </p>
       </div>
-      <div className="about-image-container">
-        <img src="https://via.placeholder.com/300x300" alt="Professional healthcare setting" className="about-image" />
+      <div className="slideshow-container">
+        <div className="slide fade">
+          <img src={Girl} alt="Image 1" />
+        </div>
+        <div className="slide fade">
+          <img src={Doctors} alt="Image 2" />
+        </div>
+        <div className="slide fade">
+          <img src={Session} alt="Image 3" />
+        </div>
       </div>
     </div>
   );
