@@ -13,7 +13,7 @@ const PatientList = () => {
   }, []);
 
   
-  const displayedPatients = search
+  const searchPatients = search
     ? patients.filter(patient =>
         patient.name.toLowerCase().includes(search.toLowerCase())
       )
