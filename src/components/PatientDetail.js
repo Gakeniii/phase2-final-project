@@ -22,7 +22,7 @@ const PatientDetail = () => {
           <p className="appointment-info"><strong>Previous Appointment:</strong> {patient.previousAppointment}</p>
           <p className="diagnosis-info"><strong>DIAGNOSIS:</strong> {patient.diagnosis}</p>
           <p className="patients-notes"><h3>Notes:</h3> {patient.notes}</p>
-          <p className="observation-notes"><h3>Observations</h3> {patient.observations}</p>
+          <p className="observation-notes"><h3>Observations:</h3> {patient.observations}</p>
           <p className="appointment-info"><strong>Next Appointment:</strong> {patient.nextAppointment}</p>
       </main>
       <br/><br/><br/>
