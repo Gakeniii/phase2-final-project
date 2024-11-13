@@ -25,6 +25,7 @@ const PatientDetail = () => {
           <p className="patients-notes"><h3>Notes:</h3> {patient.notes}</p>
           <p className="observation-notes"><h3>Observations</h3> {patient.observations}</p>
       </main>
+      <br/><br/><br/>
     </div>
   );
 };
