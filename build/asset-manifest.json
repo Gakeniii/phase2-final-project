@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/phase2-final-project/static/css/main.4c9e3d9f.css",
-    "main.js": "/phase2-final-project/static/js/main.6f39d2cf.js",
+    "main.css": "/phase2-final-project/static/css/main.e12d4cac.css",
+    "main.js": "/phase2-final-project/static/js/main.22a4fd03.js",
+    "static/media/session.jpg": "/phase2-final-project/static/media/session.60f6a34a62c66b1ae06b.jpg",
+    "static/media/doctors.jpg": "/phase2-final-project/static/media/doctors.c71a243b231d7462ceb4.jpg",
     "static/media/happy-group.jpg": "/phase2-final-project/static/media/happy-group.a20fd825ddfc1dceaf30.jpg",
+    "static/media/girl-happy.jpg": "/phase2-final-project/static/media/girl-happy.3e85cc7cfbf34f835d57.jpg",
+    "static/media/moringa-dp.jpeg": "/phase2-final-project/static/media/moringa-dp.7c3da6afd9c79e8eb39f.jpeg",
     "index.html": "/phase2-final-project/index.html",
-    "main.4c9e3d9f.css.map": "/phase2-final-project/static/css/main.4c9e3d9f.css.map",
-    "main.6f39d2cf.js.map": "/phase2-final-project/static/js/main.6f39d2cf.js.map"
+    "main.e12d4cac.css.map": "/phase2-final-project/static/css/main.e12d4cac.css.map",
+    "main.22a4fd03.js.map": "/phase2-final-project/static/js/main.22a4fd03.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c9e3d9f.css",
-    "static/js/main.6f39d2cf.js"
+    "static/css/main.e12d4cac.css",
+    "static/js/main.22a4fd03.js"
   ]
 }
