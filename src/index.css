@@ -237,29 +237,54 @@ form {
 }
 
 .patient-name {
-    color: #333;
+    color: #390099;
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.appointment-info {
+.appointment-info-prev {
     color: #777;
     font-size: 1.1rem;
     margin: 8px 0;
 }
 
-.appointment-info strong {
+.appointment-info-prev strong {
     color: #333;
 }
-.diagnosis-info{
-    color: #333
+
+.appointment-info-nxt {
+    color: #424040;
+    font-size: 1.1rem;
+    margin: 8px 0;
 }
-.patients-notes{
+
+.appointment-info-nxt strong {
+    color: #ff5400;
+}
+
+.diagnosis-info{
+    color: #046776;
+}
+
+.patients-notes h3{
+    color: #177f09;
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.patients-notes {
     color: #333;
     font-size: 1.1rem;
     margin: 8px 0;
 }
+
+.observation-notes h3{
+    color: #ba031b;
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
 .observation-notes{
     color: #333;
     font-size: 1.1rem;

@@ -12,18 +12,18 @@ const PatientDetail = () => {
       .then(data => setPatient(data));
   }, [id]);
 
-  if (!patient) return <p>Loading...</p>;
+  if (!patient) return <h2 id='loading'>Loading...</h2>;
 
   return (
     <div className="patient-detail-container">
       <main className="patient-detail-main">
           <h1 className="patient-detail-heading">Patient Information</h1>
           <h2 className="patient-name">{patient.name}</h2>
-          <p className="appointment-info"><strong>Previous Appointment:</strong> {patient.previousAppointment}</p>
+          <p className="appointment-info-prev"><strong>Previous Appointment:</strong> {patient.previousAppointment}</p>
           <p className="diagnosis-info"><strong>DIAGNOSIS:</strong> {patient.diagnosis}</p>
           <p className="patients-notes"><h3>Notes:</h3> {patient.notes}</p>
           <p className="observation-notes"><h3>Observations:</h3> {patient.observations}</p>
-          <p className="appointment-info"><strong>Next Appointment:</strong> {patient.nextAppointment}</p>
+          <p className="appointment-info-nxt"><strong>Next Appointment:</strong> {patient.nextAppointment}</p>
       </main>
       <br/><br/><br/>
     </div>
