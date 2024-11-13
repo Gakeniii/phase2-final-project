@@ -20,7 +20,7 @@ const PatientDetail = () => {
     <div className="patient-detail-container">
       <main className="patient-detail-main">
           <h1 className="patient-detail-heading">Patient Information</h1>
-          <h2 className="patient-name">{patient.name}</h2>
+          <h2 className="patient-name">{patient.name},{patient.age}y/o</h2>
           <p className="appointment-info-prev"><strong>Previous Appointment:</strong> {patient.previousAppointment}</p>
           <p className="diagnosis-info"><strong>DIAGNOSIS:</strong> {patient.diagnosis}</p>
           <p className="patients-notes"><h3>Notes:</h3> {patient.notes}</p>

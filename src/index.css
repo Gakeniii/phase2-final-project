@@ -16,6 +16,30 @@ body {
     --text: #12498b;
     --textColor: white;
 }
+/* PROFILE at navbar */
+.p-name{
+    background: transparent;
+    font-size: 0.95em;
+    border: none;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3),
+                2px 2px 0px rgba(0, 0, 0, 0.5);
+    line-height: 0.8em;
+    width: 108px;
+    height: 33px;
+    color: #fff;
+    position: absolute;
+    top: 28px;
+    right: 80px;
+}
+.profile-pic{
+    border-radius: 50%;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
 
 /* NAV BAR AND HEADER */
 header{
@@ -310,13 +334,6 @@ h2#info{
     margin: 0 auto;
 }
 
-/* .info-header {
-    font-size: 2rem;
-    color: #9f949b;
-    text-align: center;
-    margin-bottom: 30px;
-} */
-
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -395,16 +412,13 @@ p#diagnosis{
     justify-content: space-between;
     padding: 20px;
     background-color: #f7f9fc;
-    /* height: 100vh;
-    overflow-y: auto; */
+
 }
 
 .about-content {
     margin-top: auto;
     width: 60%;
-    /* max-width: 600px; */
     padding-right: 20px;
-    /* animation: fadeIn 1.5s ease-in-out; */
 }
 
 .about-title {
@@ -426,8 +440,6 @@ p#diagnosis{
     width: 35%;
     position: relative;
     overflow: hidden;
-    /* max-width: 600px; */
-    /* margin: auto; */
 }
 
 .slide {
