@@ -62,6 +62,16 @@ const UpdatePatient = () => {
             required
             className="form-group"
           />
+
+          <label>Age:</label>
+            <input
+              type="text"
+              name="age"
+              value={patient.age}
+              onChange={handleChange}
+              required
+              className="form-group"
+          />
         
           <label>Diagnosis:</label>
           <input
@@ -73,11 +83,11 @@ const UpdatePatient = () => {
             className="form-group"
           />
 
-          <label>Age:</label>
+          <label>Next Appointment Date:</label>
           <input
-            type="text"
-            name="age"
-            value={patient.age}
+            type="date"
+            name="nextAppointment"
+            value={patient.nextAppointment}
             onChange={handleChange}
             required
             className="form-group"
