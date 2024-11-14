@@ -91,6 +91,7 @@ const UpdatePatient = () => {
             required
             className="form-group"
           />
+
         <button type="submit" className="update-button">Save Changes</button>
       </form>
     </div>
