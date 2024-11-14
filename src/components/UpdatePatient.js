@@ -9,6 +9,7 @@ const UpdatePatient = () => {
     age: '',
     diagnosis: '',
     nextAppointment: '',
+
   });
 
   useEffect(() => {
@@ -77,16 +78,6 @@ const UpdatePatient = () => {
             type="text"
             name="age"
             value={patient.age}
-            onChange={handleChange}
-            required
-            className="form-group"
-          />
-
-          <label>Next Appointment Date:</label>
-          <input
-            type="date"
-            name="nextAppointment"
-            value={patient.nextAppointment}
             onChange={handleChange}
             required
             className="form-group"
