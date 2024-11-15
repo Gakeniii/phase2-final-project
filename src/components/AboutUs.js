@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div className="about-content">
         <h1 className="about-title">About the Schedualy</h1>
         <p className="about-description">
-          Fonnded on the 11th of November 2024, say goodbye to disorganized spreadsheets, lost paperwork, and the inefficiencies that often come with traditional client management methods. This app empowers you to focus on what matters most: providing quality care and guidance to your clients. By streamlining the organization of patient information, the app allows you to maintain a structured, reliable system that can be accessed anytime, anywhere.
+          Founded on the 11th of November 2024, say goodbye to disorganized spreadsheets, lost paperwork, and the inefficiencies that often come with traditional client management methods. This app empowers you to focus on what matters most: providing quality care and guidance to your clients. By streamlining the organization of patient information, the app allows you to maintain a structured, reliable system that can be accessed anytime, anywhere.
         </p>
         <p className="about-description">
           We understand that managing a practice on your own can be challenging. That's why Schedualy offers features designed to reduce administrative burdens. Whether you're keeping track of multiple clients or managing frequent appointments, this app is built to make your life easier. You can quickly access past sessions, add new appointment details, and update client information, all from a user-friendly interface. It’s like having a personal assistant that handles your client scheduling for you.
