@@ -1,7 +1,6 @@
 import React from 'react';
 import Girl from '../images/girl-happy.jpg'
-import Doctors from '../images/doctors.jpg'
-import Session from '../images/session.jpg'
+
 
 const AboutUs = () => {
   return (
